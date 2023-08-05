@@ -1,0 +1,58 @@
+.about {
+  display: flex; 
+  flex-direction: column;
+  gap: 20%;
+  margin-top: 3rem;
+}
+
+.colLeft {
+  flex-basis: 60%;
+  padding: 2rem 0;
+  order: 1;
+}
+
+.colRight {
+  flex-basis: 20%;
+  align-self: center;
+}
+
+.profileImg {
+  border-radius: 50%;
+}
+
+.titleH1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.titleH2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.titleH1, .titleH2 {
+  color: white;
+  line-height: 1.25;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 2;
+  margin-top: 2rem;
+}
+
+
+@media screen and (min-width: 1280px) {
+  .about {
+    flex-direction: row;
+  }
+
+  .colLeft {
+    order: 0;
+  }
+
+  .titleH1 {
+    font-size: 64px;
+  }
+}
