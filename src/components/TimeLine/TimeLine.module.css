@@ -1,0 +1,35 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeLineItem {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.colLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colRight {
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+
+.timeLineDot {
+  border-radius: 50%;
+  width: .75rem;
+  height: .75rem;
+  background-color: rgb(148 148 149);
+}
+
+.timeLineSeparator {
+  width: 3px;
+  background-color: rgb(148 148 149);
+  margin-top: 2px;
+  min-height: 1rem;
+  flex-grow: 1;
+}
