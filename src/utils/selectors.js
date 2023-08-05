@@ -15,3 +15,13 @@ export function selectMedia(media) {
     ...media.fields.file
   }
 }
+
+export function selectExperiences(data) {
+  return data.items[0].fields.experiences
+}
+
+export function selectExperienceItem(item) {
+  return {
+    ...item.fields
+  }
+}

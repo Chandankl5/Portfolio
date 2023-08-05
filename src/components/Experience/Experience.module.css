@@ -1,0 +1,19 @@
+.experience {
+  margin-top: 1.5rem;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    font-size: 64px;
+  }
+
+  .experience {
+    margin-top: 5rem;
+  }
+}

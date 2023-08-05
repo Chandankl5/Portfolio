@@ -1,0 +1,25 @@
+.item {
+
+}
+
+.row {
+  margin-top: 0.25 rem;
+  display: flex;
+  gap: 20px;
+}
+
+.lineItem {
+  margin-top: 1rem;
+}
+
+.desc {
+  padding-left: 1rem;
+  margin-top: 1rem;
+  line-height: 1.75;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  line-height: 1.75;
+}
