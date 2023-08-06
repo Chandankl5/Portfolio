@@ -14,6 +14,7 @@ export default function Home() {
       <ProjectsContainer />
       <SkillsContainer />
       <EducationContainer />
+      <div className={styles.footerText}>Made with <span>❤️</span> by Chandan KL</div>
     </main>
   )
 }
