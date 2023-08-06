@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { MARKS } from '@contentful/rich-text-types';
 
 import styles from './ExperienceItem.module.css';
 
@@ -13,6 +14,13 @@ function ExperienceItem({
   achievements,
   companyLogoUrl
 }) {
+
+  const richTextRendererOptions = {
+    renderMark: {
+      [MARKS.BOLD]: (text) => <span style={{ color: 'white' }}>{text}</span>
+    }
+  }
+
   return (
     <div className={styles.item}>
       <div className={styles.row}>
@@ -32,7 +40,7 @@ function ExperienceItem({
       <div>
         <div className={`${styles.lineItem} ${styles.title}`}>{role}</div>
         <div className={styles.lineItem}>{from} - {to}</div>
-        <div className={styles.desc}>{documentToReactComponents(achievements)}</div>
+        <div className={styles.desc}>{documentToReactComponents(achievements, richTextRendererOptions)}</div>
       </div>
     </div>
   )
