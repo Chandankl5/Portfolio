@@ -12,7 +12,7 @@ async function ExperienceContainer() {
   const items = selectExperiences(data);
 
   return (
-    <RevealAnimation direction='left'>
+    <RevealAnimation direction='left' intersect={false}>
       <Experience
         title='Experience' 
         items={items}
