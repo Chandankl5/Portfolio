@@ -1,0 +1,30 @@
+.projects {
+  margin-top: 1.5rem;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1..5rem;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+}
+
+@media screen and (min-width: 1280px) {
+  .projects {
+    margin-top: 5rem;
+  }
+
+  .projectsList {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+  }
+}
+

@@ -25,3 +25,13 @@ export function selectExperienceItem(item) {
     ...item.fields
   }
 }
+
+export function selectProjects(data) {
+  return data.items[0].fields.projects
+}
+
+export function selectProjectItem(item) {
+  return {
+    ...item.fields
+  }
+}
