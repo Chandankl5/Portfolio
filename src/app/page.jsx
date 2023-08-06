@@ -5,6 +5,7 @@ import ExperienceContainer from '@/components/Experience/ExperienceContainer';
 import ProjectsContainer from '@/components/Projects/ProjectsContainer';
 import SkillsContainer from '@/components/Skills/SkillsContainer';
 import EducationContainer from '@/components/Education/EducationContainer';
+import RevealAnimation from '@/components/RevealAnimation/RevealAnimation';
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
       <ProjectsContainer />
       <SkillsContainer />
       <EducationContainer />
-      <div className={styles.footerText}>Made with <span>❤️</span> by Chandan KL</div>
+      <RevealAnimation direction='left'>
+        <div className={styles.footerText}>Made with <span>❤️</span> by Chandan KL</div>
+      </RevealAnimation>
     </main>
   )
 }

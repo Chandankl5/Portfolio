@@ -3,6 +3,7 @@ import React from 'react';
 import Projects from './Projects'
 import getEntries from '@/utils/getEntries';
 import { selectProjects } from '@/utils/selectors';
+import RevealAnimation from '../RevealAnimation/RevealAnimation';
 
 async function ProjectsContainer() {
 
@@ -11,10 +12,12 @@ async function ProjectsContainer() {
   const items = selectProjects(data);
 
   return (
-    <Projects
-      title='Projects'
-      items={items}
-    />
+    <RevealAnimation>
+      <Projects
+        title='Projects'
+        items={items}
+      />
+    </RevealAnimation>
   )
 }
 

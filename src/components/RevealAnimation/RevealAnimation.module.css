@@ -1,0 +1,35 @@
+
+.slideRight {
+  animation: slide-right 2s ease both, fade 2s ease both;
+}
+
+.slideLeft {
+  animation: slide-left 2s ease both, fade 2s ease both;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

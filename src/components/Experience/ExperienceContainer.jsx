@@ -3,6 +3,7 @@ import React from 'react';
 import Experience from './Experience'
 import getEntries from '@/utils/getEntries'
 import { selectExperiences } from '@/utils/selectors';
+import RevealAnimation from '../RevealAnimation/RevealAnimation';
 
 async function ExperienceContainer() {
 
@@ -11,10 +12,12 @@ async function ExperienceContainer() {
   const items = selectExperiences(data);
 
   return (
-    <Experience
-      title='Experience' 
-      items={items}
-    />
+    <RevealAnimation direction='left'>
+      <Experience
+        title='Experience' 
+        items={items}
+      />
+    </RevealAnimation>
   )
 }
 

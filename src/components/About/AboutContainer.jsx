@@ -4,6 +4,7 @@ import About from './About';
 
 import getEntries from '@/utils/getEntries'
 import { selectAbout, selectMedia } from '@/utils/selectors';
+import RevealAnimation from '../RevealAnimation/RevealAnimation';
 
 async function AboutContainer() {
   
@@ -13,12 +14,14 @@ async function AboutContainer() {
   const { url: photoUrl } = selectMedia(photo) || {};
 
   return (
-    <About 
-      name={name}
-      description={description}
-      designation={designation}
-      photoUrl={`https:${photoUrl}`}
-    />
+    <RevealAnimation intersect={false}>
+      <About 
+        name={name}
+        description={description}
+        designation={designation}
+        photoUrl={`https:${photoUrl}`}
+      />
+    </RevealAnimation>
   )
 }
 

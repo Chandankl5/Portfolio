@@ -2,6 +2,7 @@ import React from 'react'
 import Skills from './Skills'
 import getEntries from '@/utils/getEntries';
 import { selectSkills } from '@/utils/selectors';
+import RevealAnimation from '../RevealAnimation/RevealAnimation';
 
 async function SkillsContainer() {
 
@@ -10,10 +11,12 @@ async function SkillsContainer() {
   const items = selectSkills(data) || {};
   
   return (
-    <Skills 
-      title='Skills'
-      items={items}
-    />
+    <RevealAnimation direction='left'>
+      <Skills 
+        title='Skills'
+        items={items}
+      />
+    </RevealAnimation>
   )
 }
 
