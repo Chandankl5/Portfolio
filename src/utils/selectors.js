@@ -35,3 +35,7 @@ export function selectProjectItem(item) {
     ...item.fields
   }
 }
+
+export function selectSkills(data) {
+  return data.items[0].fields.skills
+}

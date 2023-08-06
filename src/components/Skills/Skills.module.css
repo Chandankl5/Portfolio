@@ -1,0 +1,28 @@
+.skills {
+  margin-top: 1.5rem;
+
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .skills {
+    margin-top: 5rem;
+  }
+
+  .list {
+    margin-top: 5rem;
+  }
+}
