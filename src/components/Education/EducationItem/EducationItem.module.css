@@ -1,0 +1,26 @@
+.item {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #363636;
+}
+
+.subtitle {
+  line-height: 1.75;
+  color: white;
+  font-size: 14px;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  line-height: 1.75;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}

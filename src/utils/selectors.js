@@ -39,3 +39,14 @@ export function selectProjectItem(item) {
 export function selectSkills(data) {
   return data.items[0].fields.skills
 }
+
+
+export function selectEducation(data) {
+  return data.items[0].fields.education
+}
+
+export function selectEducationItem(item) {
+  return {
+    ...item.fields
+  }
+}
