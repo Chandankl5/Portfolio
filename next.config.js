@@ -17,7 +17,7 @@ if(process.env.EXPORT) {
 if(process.env.GH_PAGES_DEPLOY) {
   nextConfig.assetPrefix = '/Portfolio';
   nextConfig.images.loader = 'custom';
-  nextConfig.images.loader = './src/utils/imageLoader.js';
+  nextConfig.images.loaderFile = './src/utils/imageLoader.js';
 }
 
 module.exports = nextConfig
