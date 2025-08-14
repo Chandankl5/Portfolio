@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy" : "EXPORT=true GH_PAGES_DEPLOY=true npm run build && cp .nojekyll out/.nojekyll",
-    "deploy" : "gh-pages -d out"
+    "deploy" : "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.17.1",
